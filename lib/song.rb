@@ -16,7 +16,7 @@ class Song
   end
 
   def count
-    return 
+    return
       @@count
   end
 
