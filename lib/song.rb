@@ -27,9 +27,9 @@ class Song
   def self.genres
     @@genres.uniq!
   end
-  binding.pry
 
   def self.genres_count
+    binding.pry
     genre_count = {}
     @@genres.each do |genre|
       if genre_count[genre] #genre already in the hash
