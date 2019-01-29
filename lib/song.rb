@@ -20,7 +20,7 @@ class Song
   end
 
   def artists
-    @@artists.unique!
+    @@artists.uniq!
   end
 
   def genres_count
