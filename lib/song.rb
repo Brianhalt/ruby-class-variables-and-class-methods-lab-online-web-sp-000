@@ -38,7 +38,7 @@ class Song
       end
     end
     binding.pry
-    genre_count  
+    genre_count
   end
 
   def artist_count
