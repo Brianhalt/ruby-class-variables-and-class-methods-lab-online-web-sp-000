@@ -1,3 +1,4 @@
+require 'pry'
 class Song
 
   attr_accessor :name, :artist, :genre
@@ -27,8 +28,20 @@ class Song
     @@genres.uniq!
   end
 
-  def genres_count
-
+  def self.genres_count
+    genre_count = {}
+    @@genres.each do |genre|
+      if genre_count[genre] #genre already in the hash
+        genre_count[genre] += 1
+      else #if new genre
+        genre_count[genre] = 1
+      end
+    end
+    binding.pry
+    genre_count  
   end
 
+  def artist_count
+
+  end
 end
