@@ -32,12 +32,12 @@ class Song
     genre_count = {}
     @@genres.each do |genre|
       if genre_count[genre] #genre already in the hash
+        binding.pry
         genre_count[genre] += 1
       else #if new genre
         genre_count[genre] = 1
       end
     end
-    binding.pry
     genre_count
   end
 
