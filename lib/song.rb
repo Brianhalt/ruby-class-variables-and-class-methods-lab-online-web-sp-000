@@ -45,7 +45,7 @@ class Song
     @@artists.each do |artist|
       if artist_hash[artist] #artists already in the hash
         artist_hash[artist] += 1
-      else #if new genre
+      else #if new artist
         artist_hash[artist] = 1
       end
     end
