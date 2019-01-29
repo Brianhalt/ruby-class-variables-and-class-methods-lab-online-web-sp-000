@@ -19,14 +19,12 @@ class Song
     @@count
   end
 
-  def genres
+  def genres_count
 
   end
 
-  def initialize
-    @@genres <<
-  end
+
 
   def artists
-
+      
   end
