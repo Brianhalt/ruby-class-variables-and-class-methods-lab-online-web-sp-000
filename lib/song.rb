@@ -26,3 +26,4 @@ class Song
   def artists
 
   end
+end
